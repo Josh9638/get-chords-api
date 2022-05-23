@@ -1,0 +1,8 @@
+env/
+getchordsapi/media/
+getchordsapi/prueba.py
+getchordsapi/db.sqlite3
+getchordsapi/getchords/__pycache__
+getchordsapi/getchords/migrations/__pycache__
+getchordsapi/getchordsapi/__pycache__
+getchordsapi/getchordsapi/settings.py
