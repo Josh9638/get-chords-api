@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import SongCategory, SongGenre, SongMusician, SongAlbum, SongChords, SongPlaylist
+from .models import SongCategory, SongGenre, SongMusician, SongAlbum, SongChords, SongPlaylist, Chords
 from django.contrib.auth.models import User
 
 
@@ -83,3 +83,9 @@ class UserSerializer(serializers.ModelSerializer):
 
         return user
 
+
+class ChordsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Chords
+        fields = ('id','audio_file','chords')
+        #fields = '__all__'

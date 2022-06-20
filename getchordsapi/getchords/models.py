@@ -63,3 +63,13 @@ class SongPlaylist(models.Model):
     class Meta:
         db_table = 'song_playlist'
 
+
+class Chords(models.Model):
+    audio_file = models.FileField(default=None)
+    chords = models.TextField(default="")
+
+    class Meta:
+        db_table = 'song_chords_lite'
+    
+    class JSONAPIMeta:
+        resource_name = 'audio_file'
